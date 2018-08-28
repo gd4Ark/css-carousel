@@ -1,0 +1,116 @@
+input[name="input-btn"]:checked ~ .count-list .count-item{
+    background:rgba(255, 255, 255, 0.5);
+}
+input[name="input-btn"]:checked ~ .side-btn label{
+    display: none;
+}
+
+/* 显示第一张图片 */
+#count-item-1:checked ~ .pic-list,
+#prev-btn-2:checked ~ .pic-list,
+#next-btn-5:checked ~ .pic-list{
+    margin-left: 0;
+}
+#count-item-1:checked ~ .count-list .count-item-1,
+#prev-btn-2:checked ~ .count-list .count-item-1,
+#next-btn-5:checked ~ .count-list .count-item-1{
+    background:rgba(255,255,255,1);
+}
+#count-item-1:checked ~ .side-btn label:nth-child(1),
+#prev-btn-2:checked  ~ .side-btn label:nth-child(1),
+#next-btn-5:checked ~ .side-btn label:nth-child(1){
+    display: block;
+}
+/* 显示第二张图片 */
+#count-item-2:checked ~ .pic-list,
+#prev-btn-3:checked ~ .pic-list,
+#next-btn-1:checked ~ .pic-list{
+    margin-left: -100%;
+}
+#count-item-2:checked ~ .count-list .count-item-2,
+#prev-btn-3:checked ~ .count-list .count-item-2,
+#next-btn-1:checked ~ .count-list .count-item-2{
+    background:rgba(255,255,255,1);
+}
+#count-item-2:checked ~ .side-btn label:nth-child(2),
+#prev-btn-3:checked  ~ .side-btn label:nth-child(2),
+#next-btn-1:checked ~ .side-btn label:nth-child(2){
+    display: block;
+}
+/* 显示第三张图片 */
+#count-item-3:checked ~ .pic-list,
+#prev-btn-4:checked ~ .pic-list,
+#next-btn-2:checked ~ .pic-list{
+    margin-left: -200%;
+}
+#count-item-3:checked ~ .count-list .count-item-3,
+#prev-btn-4:checked ~ .count-list .count-item-3,
+#next-btn-2:checked ~ .count-list .count-item-3{
+    background:rgba(255,255,255,1);
+}
+#count-item-3:checked ~ .side-btn label:nth-child(3),
+#prev-btn-4:checked  ~ .side-btn label:nth-child(3),
+#next-btn-2:checked ~ .side-btn label:nth-child(3){
+    display: block;
+}
+/* 显示第四张图片 */
+#count-item-4:checked ~ .pic-list,
+#prev-btn-5:checked ~ .pic-list,
+#next-btn-3:checked ~ .pic-list{
+    margin-left: -300%;
+}
+#count-item-4:checked ~ .count-list .count-item-4,
+#prev-btn-5:checked ~ .count-list .count-item-4,
+#next-btn-3:checked ~ .count-list .count-item-4{
+    background:rgba(255,255,255,1);
+}
+#count-item-4:checked ~ .side-btn label:nth-child(4),
+#prev-btn-5:checked  ~ .side-btn label:nth-child(4),
+#next-btn-3:checked ~ .side-btn label:nth-child(4){
+    display: block;
+}
+/* 显示第五张图片 */
+#count-item-5:checked ~ .pic-list,
+#prev-btn-1:checked ~ .pic-list,
+#next-btn-4:checked ~ .pic-list{
+    margin-left: -400%;
+}
+#count-item-5:checked ~ .count-list .count-item-5,
+#prev-btn-1:checked ~ .count-list .count-item-5,
+#next-btn-4:checked ~ .count-list .count-item-5{
+    background:rgba(255,255,255,1);
+}
+#count-item-5:checked ~ .side-btn label:nth-child(5),
+#prev-btn-1:checked  ~ .side-btn label:nth-child(5),
+#next-btn-4:checked ~ .side-btn label:nth-child(5){
+    display: block;
+}
+
+/* 无缝轮播 */
+#prev-btn-1:checked ~ .pic-after,
+#next-btn-5:checked ~ .pic-after{
+    z-index: 1;
+}
+#prev-btn-1:checked ~ .pic-after{
+    animation: moveRight 0.5s;
+}
+#next-btn-5:checked ~ .pic-after{
+    margin-left: -100%;
+    animation: moveLeft 0.5s;
+}
+@keyframes moveLeft{
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -100%;
+    }
+}
+@keyframes moveRight{
+    0%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}

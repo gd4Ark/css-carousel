@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/control.css">
+    <title>CSS轮播</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 底部控制板按钮 隐藏-->
+        <input type="radio" name="input-btn" id="count-item-1" class="count-input-btn" checked>
+        <input type="radio" name="input-btn" id="count-item-2" class="count-input-btn">
+        <input type="radio" name="input-btn" id="count-item-3" class="count-input-btn">
+        <input type="radio" name="input-btn" id="count-item-4" class="count-input-btn">
+        <input type="radio" name="input-btn" id="count-item-5" class="count-input-btn">
+        <!-- 两侧按钮 隐藏 -->
+        <!-- 前一张 -->
+        <input type="radio" name="input-btn" id="prev-btn-1" class="prev-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="prev-btn-2" class="prev-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="prev-btn-3" class="prev-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="prev-btn-4" class="prev-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="prev-btn-5" class="prev-input-btn side-input-btn">
+        <!-- 后一张 -->
+        <input type="radio" name="input-btn" id="next-btn-1" class="next-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="next-btn-2" class="next-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="next-btn-3" class="next-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="next-btn-4" class="next-input-btn side-input-btn">
+        <input type="radio" name="input-btn" id="next-btn-5" class="next-input-btn side-input-btn">
+        <!-- 两侧按钮 显示 -->
+        <div class="prev-btn side-btn">
+            <label for="prev-btn-1"></label>
+            <label for="prev-btn-2"></label>
+            <label for="prev-btn-3"></label>
+            <label for="prev-btn-4"></label>
+            <label for="prev-btn-5"></label>
+        </div>
+        <div class="next-btn side-btn">
+            <label for="next-btn-1"></label>
+            <label for="next-btn-2"></label>
+            <label for="next-btn-3"></label>
+            <label for="next-btn-4"></label>
+            <label for="next-btn-5"></label>
+        </div>
+        <!-- 底部控制板 显示 -->
+        <ul class="count-list">
+           <li class="count-item count-item-1">
+               <label for="count-item-1"></label>
+           </li>
+           <li class="count-item count-item-2" >
+               <label for="count-item-2"></label>
+           </li>
+           <li class="count-item count-item-3">
+               <label for="count-item-3"></label>
+           </li>
+           <li class="count-item count-item-4">
+               <label for="count-item-4"></label>
+           </li>
+           <li class="count-item count-item-5" >
+               <label for="count-item-5"></label>
+           </li>
+        </ul>
+        <!-- 图片容器 -->
+        <div class="pic-list">
+            <div class="pic-item pic-item-1">ONE</div>
+            <div class="pic-item pic-item-2">TWO</div>
+            <div class="pic-item pic-item-3">THREE</div>
+            <div class="pic-item pic-item-4">FOUR</div>
+            <div class="pic-item pic-item-5">FIVE</div>
+        </div>
+        <!-- 无缝轮播 -->
+        <div class="pic-after">
+            <div class="pic-item">FIVE</div>
+            <div class="pic-item">ONE</div>
+        </div>
+    </div>
+</body>
+</html>
