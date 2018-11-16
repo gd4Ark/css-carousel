@@ -1,0 +1,194 @@
+/* 每次点击按钮 重置当前焦点按钮的样式 */
+input[type=radio]:checked ~ .count label{
+    background: #447fff;
+}
+/* 重置当前显示的左右按钮 */
+input[type=radio]:checked ~ .dir_box label{
+    display: none;
+}
+
+/* 下方按钮1 */
+#btn1:checked ~ .pic .box{
+    margin-left: 0;
+}
+#btn1:checked ~ .count .btn_1{
+    background:white;
+}
+#btn1:checked ~ .dir_box .btn_btn_1{
+    display: flex;
+}
+
+/* 下方按钮2 */
+#btn2:checked ~ .pic .box{
+    margin-left: -100%;
+}
+#btn2:checked ~ .count .btn_2{
+    background:white;
+}
+#btn2:checked ~ .dir_box .btn_btn_2{
+    display: flex;
+}
+
+/* 下方按钮3 */
+#btn3:checked ~ .pic .box{
+    margin-left: -200%;
+}
+#btn3:checked ~ .count .btn_3{
+    background:white;
+}
+#btn3:checked ~ .dir_box .btn_btn_3{
+    display: flex;
+}
+
+/* 下方按钮4 */
+#btn4:checked ~ .pic .box{
+    margin-left: -300%;
+}
+#btn4:checked ~ .count .btn_4{
+    background:white;
+}
+#btn4:checked ~ .dir_box .btn_btn_4{
+    display: flex;
+}
+
+/* 下方按钮5 */
+#btn5:checked ~ .pic .box{
+    margin-left: -400%;
+}
+#btn5:checked ~ .count .btn_5{
+    background:white;
+}
+#btn5:checked ~ .dir_box .btn_btn_5{
+    display: flex;
+}
+
+
+/* 左边第一个按钮 */
+#left_btn1:checked ~ .pic .box{
+    margin-left: -400%;
+}
+#left_btn1:checked ~ .count .btn_5{
+    background:white;
+}
+#left_btn1:checked ~ .pic .before_box{
+    transition: right 0.8s;
+    opacity:1;
+    right:-100%;
+}
+#left_btn1:checked ~ .dir_box .btn_btn_5{
+    display: flex;
+}
+
+/* 右边第一个按钮 */
+#right_btn1:checked ~ .pic .box{
+    margin-left: -100%;
+}
+#right_btn1:checked ~ .count .btn_2{
+    background:white;
+}
+#right_btn1:checked ~ .dir_box .btn_btn_2{
+    display: flex;
+}
+
+/* 左边第二个按钮 */
+#left_btn2:checked ~ .pic .box{
+    margin-left: 0;
+}
+#left_btn2:checked ~ .count .btn_1{
+    background:white;
+}
+#left_btn2:checked ~ .dir_box .btn_btn_1{
+    display: flex;
+}
+
+/* 右边第二个按钮 */
+#right_btn2:checked ~ .pic .box{
+    margin-left: -200%;
+}
+#right_btn2:checked ~ .count .btn_3{
+    background:white;
+}
+#right_btn2:checked ~ .dir_box .btn_btn_3{
+    display: flex;
+}
+
+/* 左边第三个按钮 */
+#left_btn3:checked ~ .pic .box{
+    margin-left: -100%;
+}
+#left_btn3:checked ~ .count .btn_2{
+    background:white;
+}
+#left_btn3:checked ~ .dir_box .btn_btn_2{
+    display: flex;
+}
+
+/* 右边第三个按钮 */
+
+#right_btn3:checked ~ .pic .box{
+    margin-left: -300%;
+}
+#right_btn3:checked ~ .count .btn_4{
+    background:white;
+}
+#right_btn3:checked ~ .dir_box .btn_btn_4{
+    display: flex;
+}
+
+/* 左边第四个按钮 */
+
+#left_btn4:checked ~ .pic .box{
+    margin-left: -200%;
+}
+#left_btn4:checked ~ .count .btn_3{
+    background:white;
+}
+#left_btn4:checked ~ .dir_box .btn_btn_3{
+    display: flex;
+}
+
+/* 右边第四个按钮 */
+
+#right_btn4:checked ~ .pic .box{
+    margin-left: -400%;
+}
+#right_btn4:checked ~ .count .btn_5{
+    background:white;
+}
+#right_btn4:checked ~ .dir_box .btn_btn_5{
+    display: flex;
+}
+
+/* 左边第五个按钮 */
+
+#left_btn5:checked ~ .pic .box{
+    margin-left: -300%;
+}
+#left_btn5:checked ~ .count .btn_4{
+    background:white;
+}
+#left_btn5:checked ~ .dir_box .btn_btn_4{
+    display: flex;
+}
+
+/* 右边第五个按钮 */
+
+#right_btn5:checked ~ .pic .box{
+    margin-left: -500%;
+    transition: margin 0.8s 0s;
+}
+#right_btn5:checked ~ .pic .after_box{
+    transition: left 0.8s;
+    opacity:1;
+    left:-100%;
+}
+#right_btn5:checked ~ .pic .box{
+    margin-left: 0;
+    transition: margin 0.8s 0s;
+}
+#right_btn5:checked ~ .count .btn_1{
+    background:white;
+}
+#right_btn5:checked ~ .dir_box .btn_btn_1{
+    display: flex;
+}

@@ -98,7 +98,7 @@ label{
     width: 300%; /* 300% 对应 3张图片 */
     height: 100%;
     margin-left: 0;
-    transition: margin 0.5s ease;
+    transition: margin 0.8s ease;
 }
 .pic-item{
     float: left;
@@ -157,11 +157,11 @@ input[name="input-btn"]:checked ~ .side-btn label{
     z-index: 1;
 }
 #prev-btn-1:checked ~ .pic-after{
-    animation: moveRight 0.5s;
+    animation: moveRight 0.8s;
 }
 #next-btn-3:checked ~ .pic-after{
     margin-left: -100%;
-    animation: moveLeft 0.5s;
+    animation: moveLeft 0.8s;
 }
 @keyframes moveLeft{
     0%{
