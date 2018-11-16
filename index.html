@@ -2,45 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>css轮播</title>
 </head>
 <body>
-    <!--
-        本次实训项目：使用纯html+css 实现图片轮播。
-        时间： 2017年 9月 17日
-        功能：
-              可通过点击第几个圆点按钮 跳转相应的图片、
-              通过点击左右按钮 实现往左边或右边轮播。
-        思路：
-              利用单选按钮 通过每个按钮的checked状态 通过css兄弟选择器
-              控制图片容器的margin-left值 来实现轮播。
-    -->
-
 
     <!--主容器-->
     <div class="container">
 
         <!--控制转到第几张按钮-->
-        <input id="btn1"  name="dir" type="radio" value="" />
-        <input id="btn2"  name="dir" type="radio" value="" />
-        <input id="btn3" name="dir" type="radio" value="" />
-        <input id="btn4" name="dir" type="radio" value="" />
-        <input id="btn5" name="dir" type="radio" value="" />
+        <input id="btn1"  name="dir" type="radio"  />
+        <input id="btn2"  name="dir" type="radio"  />
+        <input id="btn3" name="dir" type="radio"  />
+        <input id="btn4" name="dir" type="radio"  />
+        <input id="btn5" name="dir" type="radio"  />
 
         <!--控制往左边轮播-->
-        <input id="left_btn1" class="dir_btn" name="dir" type="radio" value="" />
-        <input id="left_btn2" class="dir_btn" name="dir" type="radio" value="" />
-        <input id="left_btn3" class="dir_btn" name="dir" type="radio" value="" />
-        <input id="left_btn4" class="dir_btn" name="dir" type="radio" value="" />
-        <input id="left_btn5" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="left_btn1" class="dir_btn" name="dir" type="radio"  />
+        <input id="left_btn2" class="dir_btn" name="dir" type="radio"  />
+        <input id="left_btn3" class="dir_btn" name="dir" type="radio"  />
+        <input id="left_btn4" class="dir_btn" name="dir" type="radio"  />
+        <input id="left_btn5" class="dir_btn" name="dir" type="radio"  />
 
         <!--控制往右边轮播-->
-        <input id="right_btn1" class="dir_btn"  name="dir" type="radio" value="" />
-        <input id="right_btn2"  class="dir_btn" name="dir" type="radio" value="" />
-        <input id="right_btn3" class="dir_btn" name="dir" type="radio" value="" />
-        <input id="right_btn4" class="dir_btn" name="dir" type="radio" value="" />
-        <input id="right_btn5" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="right_btn1" class="dir_btn"  name="dir" type="radio"  />
+        <input id="right_btn2"  class="dir_btn" name="dir" type="radio"  />
+        <input id="right_btn3" class="dir_btn" name="dir" type="radio"  />
+        <input id="right_btn4" class="dir_btn" name="dir" type="radio"  />
+        <input id="right_btn5" class="dir_btn" name="dir" type="radio"  />
 
         <!--存放图片-->
         <div class="pic">
