@@ -98,7 +98,21 @@ label{
     height: 100%;
     color:white;
     font-size: 3rem;
-    background:#333;
+}
+.pic-item-1{
+    background: #f1c40f;
+}
+.pic-item-1{
+    background: #2ecc71;
+}
+.pic-item-1{
+    background: #3498db;
+}
+.pic-item-1{
+    background: #9b50ba;
+}
+.pic-item-1{
+    background:#DA3653;
 }
 /* 底部控制板 */
 .container .count-list{
