@@ -2,79 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/control.css">
-    <title>CSS轮播</title>
+    <link rel="stylesheet" href="style.css">
+    <title>css轮播</title>
 </head>
 <body>
+    <!--
+        本次实训项目：使用纯html+css 实现图片轮播。
+        时间： 2017年 9月 17日
+        功能：
+              可通过点击第几个圆点按钮 跳转相应的图片、
+              通过点击左右按钮 实现往左边或右边轮播。
+        思路：
+              利用单选按钮 通过每个按钮的checked状态 通过css兄弟选择器
+              控制图片容器的margin-left值 来实现轮播。
+    -->
+
+
+    <!--主容器-->
     <div class="container">
-        <!-- 底部控制板按钮 隐藏-->
-        <input type="radio" name="input-btn" id="count-item-1" checked>
-        <input type="radio" name="input-btn" id="count-item-2">
-        <input type="radio" name="input-btn" id="count-item-3">
-        <input type="radio" name="input-btn" id="count-item-4">
-        <input type="radio" name="input-btn" id="count-item-5">
-        <!-- 两侧按钮 隐藏 -->
-        <!-- 前一张 -->
-        <input type="radio" name="input-btn" id="prev-btn-1">
-        <input type="radio" name="input-btn" id="prev-btn-2">
-        <input type="radio" name="input-btn" id="prev-btn-3">
-        <input type="radio" name="input-btn" id="prev-btn-4">
-        <input type="radio" name="input-btn" id="prev-btn-5">
-        <!-- 后一张 -->
-        <input type="radio" name="input-btn" id="next-btn-1">
-        <input type="radio" name="input-btn" id="next-btn-2">
-        <input type="radio" name="input-btn" id="next-btn-3">
-        <input type="radio" name="input-btn" id="next-btn-4">
-        <input type="radio" name="input-btn" id="next-btn-5">
-        <!-- 两侧按钮 显示 -->
-        <div class="prev-btn side-btn">
-            <label for="prev-btn-1"></label>
-            <label for="prev-btn-2"></label>
-            <label for="prev-btn-3"></label>
-            <label for="prev-btn-4"></label>
-            <label for="prev-btn-5"></label>
+
+        <!--控制转到第几张按钮-->
+        <input id="btn1"  name="dir" type="radio" value="" />
+        <input id="btn2"  name="dir" type="radio" value="" />
+        <input id="btn3" name="dir" type="radio" value="" />
+        <input id="btn4" name="dir" type="radio" value="" />
+        <input id="btn5" name="dir" type="radio" value="" />
+
+        <!--控制往左边轮播-->
+        <input id="left_btn1" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="left_btn2" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="left_btn3" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="left_btn4" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="left_btn5" class="dir_btn" name="dir" type="radio" value="" />
+
+        <!--控制往右边轮播-->
+        <input id="right_btn1" class="dir_btn"  name="dir" type="radio" value="" />
+        <input id="right_btn2"  class="dir_btn" name="dir" type="radio" value="" />
+        <input id="right_btn3" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="right_btn4" class="dir_btn" name="dir" type="radio" value="" />
+        <input id="right_btn5" class="dir_btn" name="dir" type="radio" value="" />
+
+        <!--存放图片-->
+        <div class="pic">
+
+            <!--给所有图片套一个盒子 通过左边距进行轮播-->
+            <div class="box">
+                <img src="image/1.jpg">
+                <img src="image/2.jpg">
+                <img src="image/3.jpg">
+                <img src="image/4.jpg">
+                <img src="image/5.jpg">
+            </div>
+
+            <!--给图片前面加一层图片层 用于实现无缝轮播-->
+            <div class="before_box">
+                <img src="image/5.jpg">
+                <img src="image/1.jpg">
+            </div>
+
+            <!--给图片后面加一层图片层 用于实现无缝轮播-->
+            <div class="after_box">
+                <img src="image/5.jpg">
+                <img src="image/1.jpg">
+            </div>
         </div>
-        <div class="next-btn side-btn">
-            <label for="next-btn-1"></label>
-            <label for="next-btn-2"></label>
-            <label for="next-btn-3"></label>
-            <label for="next-btn-4"></label>
-            <label for="next-btn-5"></label>
+
+        <!--左边的按钮 每次点击都会根据当前是第几张决定显示的按钮-->
+        <div class="left_box dir_box">
+            <label class="left_btn_1 btn_btn_1" for="left_btn1"></label>
+            <label class="left_btn_2 btn_btn_2" for="left_btn2"></label>
+            <label class="left_btn_3 btn_btn_3" for="left_btn3"></label>
+            <label class="left_btn_4 btn_btn_4" for="left_btn4"></label>
+            <label class="left_btn_5 btn_btn_5" for="left_btn5"></label>
         </div>
-        <!-- 底部控制板 显示 -->
-        <ul class="count-list">
-           <li class="count-item count-item-1">
-               <label for="count-item-1"></label>
-           </li>
-           <li class="count-item count-item-2" >
-               <label for="count-item-2"></label>
-           </li>
-           <li class="count-item count-item-3">
-               <label for="count-item-3"></label>
-           </li>
-           <li class="count-item count-item-4">
-               <label for="count-item-4"></label>
-           </li>
-           <li class="count-item count-item-5" >
-               <label for="count-item-5"></label>
-           </li>
-        </ul>
-        <!-- 图片容器 -->
-        <div class="pic-list">
-            <div class="pic-item pic-item-1">ONE</div>
-            <div class="pic-item pic-item-2">TWO</div>
-            <div class="pic-item pic-item-3">THREE</div>
-            <div class="pic-item pic-item-4">FOUR</div>
-            <div class="pic-item pic-item-5">FIVE</div>
+
+        <!--右边的按钮 每次点击都会根据当前是第几张决定显示的按钮-->
+        <div class="right_box dir_box">
+            <label class="right_btn_1 btn_btn_1" for="right_btn1"></label>
+            <label class="right_btn_2 btn_btn_2" for="right_btn2"></label>
+            <label class="right_btn_3 btn_btn_3" for="right_btn3"></label>
+            <label class="right_btn_4 btn_btn_4" for="right_btn4"></label>
+            <label class="right_btn_5 btn_btn_5" for="right_btn5"></label>
         </div>
-        <!-- 无缝轮播 -->
-        <div class="pic-after">
-            <div class="pic-item">FIVE</div>
-            <div class="pic-item">ONE</div>
+
+        <!--下方按钮 点击各个按钮 决定跳转到第几张-->
+        <div class="count">
+            <ul>
+                <li class="current">
+                    <label class="btn_1" for="btn1"></label>
+                </li>
+                <li>
+                    <label class="btn_2" for="btn2"></label>
+                </li>
+                <li>
+                    <label class="btn_3" for="btn3"></label>
+                </li>
+                <li>
+                    <label class="btn_4" for="btn4"></label>
+                </li>
+                <li>
+                    <label class="btn_5" for="btn5"></label>
+                </li>
+            </ul>
         </div>
+
     </div>
 </body>
 </html>
