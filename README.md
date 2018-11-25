@@ -1,5 +1,7 @@
 # CSS轮播
 
+在线预览：https://gd4ark.github.io/CSS-Carousel/
+
 顾名思义，就是使用纯HTML+CSS开发图片轮播功能。
 
 **主要功能如下：**
